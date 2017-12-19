@@ -1,7 +1,7 @@
 import json
 import requests
 import ReadFile
-class ESIndex(object):
+class ESClass(object):
     def __init__(self, base_url):
         self.base_url = base_url
         self.headers = {
@@ -91,6 +91,6 @@ class ESIndex(object):
         r = requests.get(search_url, data = query, headers = self.headers['normal'])
         self.response(r.text)
 
-es = ESIndex("http://localhost:9200/")
+es = ESClass("http://localhost:9200/")
 es.show_index()
 es.search()
