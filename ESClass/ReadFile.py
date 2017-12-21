@@ -19,4 +19,6 @@ class ReadFile(object):
                 yield(data_list)
                 data_list = []
 
+    def filter(self, data):
+        return data.replace('“','').replace
 
