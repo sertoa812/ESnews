@@ -15,10 +15,10 @@ class ReadFile(object):
         for index, lists in enumerate(os.listdir(self.root_dir)):
             path = os.path.join(self.root_dir, lists)
             data_list.append(self.read_file(path))
-            if index % num == 0:
+            if index % num == 0 and index != 0:
                 yield(data_list)
                 data_list = []
 
     def filter(self, data):
-        return data.replace('“','').replace
+        return data.replace('','').replace()
 

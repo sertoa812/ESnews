@@ -1,0 +1,17 @@
+Using RESTful API instead of elasticsearch-py to adapt online documents.
+
+Able to create index, bulk insert data, empty search
+
+
+2017/12/21
+Add ik analyzer
+Add stopwords
+Able to search using query
+Add delete type and data function to better debug
+
+fix bulk api problem in windows, end with \n\n instead of \n
+
+2017/12/24
+增加冗余字段，使用不同分析器实现通配符检索
+减少bulk insert 提交的数据
+使用match_all代替match实现全部数据的删除
